@@ -1,0 +1,17 @@
+.Playlist {
+    margin-bottom: 20px;
+  }
+  
+  .Playlist button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .Playlist button:hover {
+    background-color: #4CAF50;
+  }
