@@ -1,8 +1,16 @@
 .Playlist {
-    margin-bottom: 20px;
+  margin-top: 1rem;
+  margin-bottom: 20px;
+  margin-right:  20%;
+  display: flex;
+  flex-direction: column;
   }
-  
+  .Playlist.h2 {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+  }
   .Playlist button {
+    align-self: center;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
