@@ -2,12 +2,15 @@ import React from 'react';
 import './Playlist.css';
 import Tracklist from '../tracklist/tracklist';
 
-function Playlist() {
+function Playlist(props) {
+  function handleNameChange(e) {
+    props.onNameChange(e.target.value);
+  }
   return (
     <div className="Playlist">
-      <h2>Playlist</h2>
-      <Tracklist />
-      <button>Save to Spotify</button>
+      <input className="Playlist-input" defaultValue={props.playlistName} onChange={handleNameChange}/>
+      <Tracklist userSearchResults={props.playlistTracks} onRemove={props.onRemove} isRemoval={false}/>
+      <button onClick={props.onSave}>Save to Spotify</button>
     </div>
   );
 }
